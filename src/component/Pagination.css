@@ -8,6 +8,9 @@
 
 .pagination-buttons {
   margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .pagination-button {
@@ -27,6 +30,7 @@
 .pagination-button:hover {
   background-color: #ab4f03;
   transform: scale(1.1);
+  margin-top: 0px;
 }
 
 /* .pagination-button.active {
@@ -42,6 +46,7 @@
   font-size: 16px;
   padding: 8px 16px;
   margin-right: 5px;
+  margin-top: 5px;
   background-color: #ffffff;
   color: #000000;
   border: none;
@@ -54,6 +59,7 @@
 .current-page:hover {
   background-color: #00c6fc;
   transform: scale(1.1);
+  margin-top: 0px;
 }
 
 
