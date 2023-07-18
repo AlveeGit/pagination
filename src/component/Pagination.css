@@ -1,0 +1,59 @@
+.pagination-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background-color: #0a7995f6;
+  color: white;
+}
+
+.pagination-buttons {
+  margin-top: 10px;
+}
+
+.pagination-button {
+  font-size: 16px;
+  padding: 8px 16px;
+  margin-right: 5px;
+  margin-top: 5px;
+  background-color: #d69e03;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+}
+
+.pagination-button:hover {
+  background-color: #ab4f03;
+  transform: scale(1.1);
+}
+
+/* .pagination-button.active {
+  background-color: #33e39d;
+} */
+
+.pagination-button[disabled] {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.current-page {
+  font-size: 16px;
+  padding: 8px 16px;
+  margin-right: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 4px;
+  cursor: not-allowed;
+  opacity: 0.5;
+  transition: background-color 0.3s;
+
+}
+.current-page:hover {
+  background-color: #00c6fc;
+  transform: scale(1.1);
+}
+
+
