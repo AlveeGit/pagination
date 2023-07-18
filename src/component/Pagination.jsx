@@ -4,7 +4,7 @@ import "./Pagination.css";
 const Pagination = () => {
   const [data, setData] = useState([]); // Data from API
   const [currentPage, setCurrentPage] = useState(1); // Current page
-  const [itemsPerPage] = useState(25); // Number of items to show per page
+  const [itemsPerPage] = useState(5); // Number of items to show per page
 
   // Call the fetchData function once to get the data
   useEffect(() => {

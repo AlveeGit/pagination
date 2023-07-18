@@ -1,6 +1,5 @@
-import logo from './logo.svg';
-import './App.css';
-import Pagination from './component/Pagination';
+import "./App.css";
+import Pagination from "./component/Pagination";
 
 function App() {
   return (
