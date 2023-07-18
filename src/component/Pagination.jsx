@@ -95,6 +95,15 @@ const Pagination = () => {
 
       {/* pagination bar */}
       <div className="pagination-buttons">
+        {/* first page button  */}
+        <button
+          onClick={() => paginate(1)}
+          disabled={currentPage === 1}
+          className="pagination-button"
+        >
+          &lt;&lt;
+        </button>
+
         {/* previous page button  */}
         <button
           onClick={() => paginate(currentPage - 1)}
@@ -102,15 +111,6 @@ const Pagination = () => {
           className="pagination-button"
         >
           &lt;
-        </button>
-
-        {/* first page button  */}
-        <button
-          onClick={() => paginate(1)}
-          disabled={currentPage === 1}
-          className="pagination-button"
-        >
-          ...
         </button>
 
         {/* previous buttons  */}
@@ -138,15 +138,6 @@ const Pagination = () => {
           </button>
         ))}
 
-        {/* last page button  */}
-        <button
-          onClick={() => paginate(totalPages)}
-          disabled={currentPage === totalPages}
-          className="pagination-button"
-        >
-          ...
-        </button>
-
         {/* next page button  */}
         <button
           onClick={() => paginate(currentPage + 1)}
@@ -154,6 +145,15 @@ const Pagination = () => {
           className="pagination-button"
         >
           &gt;
+        </button>
+
+        {/* last page button  */}
+        <button
+          onClick={() => paginate(totalPages)}
+          disabled={currentPage === totalPages}
+          className="pagination-button"
+        >
+          &gt;&gt;
         </button>
       </div>
 
